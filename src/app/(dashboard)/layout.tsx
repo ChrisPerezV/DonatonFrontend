@@ -41,7 +41,7 @@ export default async function DashboardLayout({ children }: { children: React.Re
             Mis Donaciones
           </Link>
           <Link href="/donante/nueva-donacion" className="block px-4 py-2.5 rounded-lg hover:bg-blue-800 transition font-medium text-sm">
-            Ingresar Donación
+            Nueva Donación
           </Link>
 
           {/* SECCIÓN ADMINISTRADOR (Condicionada por el Rol) */}
@@ -51,10 +51,10 @@ export default async function DashboardLayout({ children }: { children: React.Re
                 Administración
               </p>
               <Link href="/admin/necesidades" className="block px-4 py-2.5 rounded-lg hover:bg-blue-800 transition font-medium text-sm">
-                Gestión de Necesidades
+                Monitoreo Necesidades
               </Link>
               <Link href="/admin/nueva-necesidad" className="block px-4 py-2.5 rounded-lg hover:bg-blue-800 transition font-medium text-sm">
-                Declarar Emergencia
+                Declarar Necesidad
               </Link>
               <Link href="/admin/centros" className="block px-4 py-2.5 rounded-lg hover:bg-blue-800 transition font-medium text-sm">
                 Red de Centros de Acopio
@@ -66,7 +66,7 @@ export default async function DashboardLayout({ children }: { children: React.Re
                 Coordinar Despacho
               </Link>
               <Link href="/admin/despachos" className="block px-4 py-2.5 rounded-lg hover:bg-blue-800 transition font-medium text-sm">
-                Control de Despachos
+                Control Despachos
               </Link>
             </>
           )}

@@ -1,0 +1,24 @@
+version: '3.8'
+
+services:
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    ports:
+      - "3000:3000"
+    
+    # Configuramos el Watcher nativo
+    develop:
+      watch:
+        # Reconstruye todo el contenedor si instalas nuevas librerías
+        - action: rebuild
+          path: ./package.json
+          
+        # Sincroniza instantáneamente cualquier otro archivo modificado
+        - action: sync
+          path: .
+          target: /app
+          ignore:
+            - node_modules/
+            - .next/

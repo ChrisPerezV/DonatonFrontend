@@ -75,7 +75,7 @@ export default function GestionDespachosPage() {
   return (
     <div className="max-w-6xl mx-auto mt-6">
       <div className="mb-8 border-b border-gray-200 pb-4">
-        <h2 className="text-3xl font-bold text-indigo-900">Control de Flota y Despachos</h2>
+        <h2 className="text-3xl font-bold text-indigo-900">Control Despachos</h2>
         <p className="text-gray-500 mt-1">Supervisa los camiones en ruta y confirma sus entregas en la zona cero.</p>
       </div>
 

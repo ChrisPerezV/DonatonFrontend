@@ -62,7 +62,7 @@ export default function NuevoCentroAcopioPage() {
   return (
     <div className="max-w-2xl mx-auto bg-white rounded-xl shadow-sm p-8 border border-gray-100 mt-6">
       <div className="mb-8 border-b border-gray-100 pb-4">
-        <h2 className="text-3xl font-bold text-teal-800">Registrar Centro de Acopio</h2>
+        <h2 className="text-3xl font-bold text-teal-800">Nuevo Centro de Acopio</h2>
         <p className="text-gray-500 mt-1">Habilita un nuevo punto logístico para la recepción de ayuda.</p>
       </div>
 

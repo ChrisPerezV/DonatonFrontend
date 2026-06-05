@@ -94,7 +94,7 @@ export default function MonitoreoNecesidadesPage() {
       {/* HEADER PRINCIPAL */}
       <div className="mb-6 border-b border-gray-200 pb-4 flex flex-col md:flex-row md:justify-between md:items-end gap-4">
         <div>
-          <h2 className="text-3xl font-bold text-red-900">Monitoreo de Emergencias</h2>
+          <h2 className="text-3xl font-bold text-red-900">Monitoreo Necesidades</h2>
           <p className="text-gray-500 mt-1">Sigue en tiempo real el progreso de ayuda para cada zona afectada.</p>
         </div>
       </div>
@@ -168,7 +168,7 @@ export default function MonitoreoNecesidadesPage() {
                     </select>
 
                   </div>
-                  <p className="text-sm text-gray-500 mb-4">📍 {necesidad.direccionEspecifica || 'Dirección no especificada'}</p>
+                  <p className="text-sm text-gray-500 mb-4">{necesidad.direccionEspecifica || 'Dirección no especificada'}</p>
 
                   {/* BARRA DE PROGRESO GLOBAL */}
                   <div className="mt-4">

@@ -115,7 +115,7 @@ useEffect(() => {
       <form onSubmit={handleSubmit} className="space-y-6">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {/* ORIGEN */}
-          <div className="p-4 bg-gray-50 rounded-xl border border-gray-200">
+          <div className="pt-2">
             <label className="block text-sm font-bold text-gray-700 mb-2">1. Bodega de Origen</label>
             <select
               className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 outline-none bg-white"
@@ -128,10 +128,10 @@ useEffect(() => {
           </div>
 
           {/* DESTINO */}
-          <div className="p-4 bg-red-50 rounded-xl border border-red-100">
-            <label className="block text-sm font-bold text-red-800 mb-2">2. Emergencia Destino</label>
+          <div className="pt-2">
+            <label className="block text-sm font-bold text-gray-700 mb-2">2. Emergencia Destino</label>
             <select
-              className="w-full px-4 py-2 border border-red-300 rounded-lg focus:ring-2 focus:ring-red-500 outline-none bg-white text-red-900"
+              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 outline-none bg-white"
               value={idNecesidadDestino}
               onChange={(e) => setIdNecesidadDestino(e.target.value)}
               required

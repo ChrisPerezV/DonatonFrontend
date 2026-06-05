@@ -138,7 +138,7 @@ export default function EmergenciasActivasDonantePage() {
                     href="/donante/nueva-donacion"
                     className="block w-full text-center bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-4 rounded-xl transition shadow-md hover:shadow-lg"
                   >
-                    Hacer un Aporte
+                    Nueva Donación
                   </Link>
                 </div>
 

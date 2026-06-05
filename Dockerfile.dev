@@ -1,0 +1,15 @@
+FROM node:20-alpine
+WORKDIR /app
+
+# Copiamos primero los manifiestos y descargamos dependencias
+COPY package.json package-lock.json* ./
+RUN npm install
+
+# Copiamos el resto del código fuente
+COPY . .
+
+ENV NEXT_TELEMETRY_DISABLED=1
+ENV NODE_ENV=development
+
+# Iniciamos el servidor de desarrollo
+CMD ["npm", "run", "dev"]

@@ -14,6 +14,7 @@ export default function NuevaNecesidadPage() {
     categoria: 'AGUA' as const,
     descripcionItem: '',
     cantidadRequerida: 1,
+    cantidadCubierta: 0,
     unidadMedida: 'LITROS' as const,
     prioridad: 'ALTA_URGENCIA' as const
   };
@@ -106,7 +107,7 @@ export default function NuevaNecesidadPage() {
   return (
     <div className="max-w-4xl mx-auto bg-white rounded-xl shadow-sm p-8 border border-gray-100 mt-6">
       <div className="mb-8 border-b border-gray-100 pb-4">
-        <h2 className="text-3xl font-bold text-red-800">Declarar Emergencia y Necesidad</h2>
+        <h2 className="text-3xl font-bold text-red-800">Declarar Necesidad</h2>
         <p className="text-gray-500 mt-1">Registra los elementos críticos requeridos en la zona afectada.</p>
       </div>
 
@@ -119,7 +120,7 @@ export default function NuevaNecesidadPage() {
       <form onSubmit={handleSubmit} className="space-y-8">
         {/* --- DATOS GENERALES DE LA EMERGENCIA --- */}
         <div className="bg-red-50/50 p-6 rounded-xl border border-red-100">
-          <h3 className="text-lg font-bold text-red-900 mb-4">Ubicación y Detalle de la Emergencia</h3>
+          <h3 className="text-lg font-bold text-red-900 mb-4">Ubicación y Detalle de la necesidad</h3>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-4">
             <div className="md:col-span-2">

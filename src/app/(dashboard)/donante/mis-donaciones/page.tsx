@@ -65,7 +65,7 @@ export default function MisDonacionesPage() {
           href="/donante/nueva-donacion" 
           className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition text-sm font-medium"
         >
-          Nuevo Aporte
+          Nueva Donación
         </Link>
       </div>
 
@@ -89,7 +89,7 @@ export default function MisDonacionesPage() {
             <thead>
               <tr className="bg-gray-50 text-gray-700 border-b border-gray-200">
                 <th className="p-4 font-semibold text-sm w-32">ID Aporte</th>
-                <th className="p-4 font-semibold text-sm w-32">Tipo</th>
+                {/* <th className="p-4 font-semibold text-sm w-32">Tipos</th> */}
                 <th className="p-4 font-semibold text-sm">Centro Destino</th>
                 <th className="p-4 font-semibold text-sm">Detalle de Ítems</th>
                 <th className="p-4 font-semibold text-sm w-24">Estado</th>
@@ -102,15 +102,15 @@ export default function MisDonacionesPage() {
                   <td className="p-4 text-sm text-gray-500 font-mono">
                     {donacion.id ? donacion.id.substring(0, 8).toUpperCase() : `D-${index + 1}`}
                   </td>
-                  
+                  {/* 
                   <td className="p-4 text-sm text-gray-800">
                     <span className="bg-indigo-100 text-indigo-800 px-2 py-1 rounded-md text-xs font-bold tracking-wide">
                       {donacion.tipoDonacion}
                     </span>
                   </td>
-
+                  */}
                   <td className="p-4 text-sm text-gray-700 font-medium">
-                    📍 {obtenerNombreCentro(donacion.idCentroAcopio)}
+                    {obtenerNombreCentro(donacion.idCentroAcopio)}
                   </td>
                   
                   <td className="p-4 text-sm text-gray-600">

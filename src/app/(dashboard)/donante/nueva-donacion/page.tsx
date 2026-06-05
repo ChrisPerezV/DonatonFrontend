@@ -125,7 +125,7 @@ export default function NuevaDonacionPage() {
   return (
     <div className="max-w-3xl mx-auto bg-white rounded-xl shadow-sm p-8 border border-gray-100 mt-6">
       <div className="mb-6">
-        <h2 className="text-2xl font-bold text-blue-900">Registrar Aporte</h2>
+        <h2 className="text-2xl font-bold text-blue-900">Nueva Donación</h2>
         <p className="text-gray-500 text-sm">Selecciona los ítems que deseas entregar al centro de acopio.</p>
       </div>
 
@@ -138,8 +138,8 @@ export default function NuevaDonacionPage() {
       <form onSubmit={handleSubmit} className="space-y-6">
         
         {/* SECCIÓN DE CENTRO DE ACOPIO CON FILTROS DOBLES */}
-        <div className="bg-gray-50 p-6 rounded-xl border border-gray-100">
-          <label className="block text-sm font-bold text-gray-800 mb-4">📍 ¿En qué Centro de Acopio entregarás tu aporte?</label>
+
+          <label className="block text-sm font-bold text-gray-800 mb-4">¿En qué Centro de Acopio entregarás tu aporte?</label>
           
           <div className="flex flex-col md:flex-row gap-3 mb-4">
             
@@ -160,7 +160,7 @@ export default function NuevaDonacionPage() {
 
             {/* 2. Buscador de Texto */}
             <div className="md:w-2/3 relative">
-              <span className="absolute inset-y-0 left-0 flex items-center pl-3 text-gray-400">🔍</span>
+              <span className="absolute inset-y-0 left-0 flex items-center pl-3 text-gray-400"></span>
               <input 
                 type="text" 
                 placeholder="Buscar por nombre o calle del centro..." 
@@ -196,7 +196,7 @@ export default function NuevaDonacionPage() {
           {centrosFiltrados.length > 0 && (
             <p className="text-xs text-gray-500 mt-2 text-right font-medium">Mostrando {centrosFiltrados.length} centro(s) disponible(s)</p>
           )}
-        </div>
+       
 
         {/* --- LISTA DINÁMICA DE ÍTEMS --- */}
         <div className="pt-2">
