@@ -5,20 +5,26 @@ services:
     build:
       context: .
       dockerfile: Dockerfile.dev
+    container_name: donaton-frontend
     ports:
       - "3000:3000"
+    networks:
+      - donaton-net
     
     # Configuramos el Watcher nativo
     develop:
       watch:
-        # Reconstruye todo el contenedor si instalas nuevas librerías
         - action: rebuild
           path: ./package.json
-          
-        # Sincroniza instantáneamente cualquier otro archivo modificado
         - action: sync
           path: .
           target: /app
           ignore:
             - node_modules/
             - .next/
+
+# Declaramos la red externa para que busque la que creó el backend
+networks:
+  donaton-net:
+    external: true
+    name: donaton-global-net
